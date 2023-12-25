@@ -1,17 +1,15 @@
-#  Burger Hut is Website for selling burger
+#  Burger Hut is a Website for selling burger.
+## Build in Next js client and Server both.
+## (Author) ==>Shahariar Kobir Shakil
 ## Getting Started
 
 First, run the development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+
 ```
+
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
