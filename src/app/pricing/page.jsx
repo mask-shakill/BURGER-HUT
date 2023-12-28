@@ -1,18 +1,28 @@
-import BestDeals from '@/components/BestFoodMenu/BestDeals';
-import React from 'react';
 
-const Pricing = () => {
+import BestDeals from '@/components/BestFoodMenu/BestDeals';
+async function getData() {
+  const res = await fetch('http://localhost:3000/api/burgers')
+  // The return value is *not* serialized
+  // You can return Date, Map, Set, etc.
+ 
+  if (!res.ok) {
+    // This will activate the closest `error.js` Error Boundary
+    throw new Error('Failed to fetch data')
+  }
+ 
+  return res.json()
+}
+
+
+
+
+const page =async () => {
+  const data = await getData();
   return (
-    <div className='mx-14 mt-10'>
-         <h1 className='text-center mt-5 text-2xl font-bold'>Explore today's premier offers.</h1>
-           <div className='grid grid-cols-2 gap-8 mt-7'>
-            <BestDeals/>
-            <BestDeals/>
-            <BestDeals/>
-            <BestDeals/>
-           </div>
+    <div>
+        <BestDeals data={data}></BestDeals>
     </div>
   );
 };
 
-export default Pricing;
+export default page;
