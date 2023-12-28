@@ -1,5 +1,6 @@
 import React from "react";
 import Link from "next/link";
+import { BsBucket } from "react-icons/bs";
 const Navbar = () => {
   return (
     <div className="flex justify-around items-center p-5 shadow-lg border bg-slate-200 sticky top-0 z-10">
@@ -21,10 +22,10 @@ const Navbar = () => {
         </Link>
       </ul>
       <Link
-        className="bg-pink-500 hover:bg-pink-800 px-3 py-1 rounded-lg text-white"
+        className= "text-2xl font-bold text-pink-700 flex items-center gap-x-2" 
         href="/"
       >
-        Login
+      Cart <BsBucket />
       </Link>
     </div>
   );

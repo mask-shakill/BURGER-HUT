@@ -2,7 +2,7 @@ import React from "react";
 
 const Discount = () => {
   return (
-    <div>
+    <div className="bg-white">
       <div className="relative">
         <img
           className="w-full h-[500px]"
