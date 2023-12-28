@@ -19,7 +19,13 @@ export default function Home() {
   return (
     <>
       <MainBanner />
-      <PopularMenuCard />
+      <div className="mt-14">
+        <h1 className="text-center text-pink-700 ">Best Food Menu</h1>
+        <h1 className="text-center text-3xl font-semibold text-slate-900">
+          Our Popular Food Items
+        </h1>
+        <PopularMenuCard />
+      </div>
       <div className="flex mx-14 items-start justify-center mt-28">
         <div className="w-1/2">
           <p className="text-4xl font-bold mt-10">
