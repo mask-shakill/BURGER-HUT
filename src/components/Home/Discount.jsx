@@ -10,16 +10,12 @@ const Discount = () => {
           alt=""
         />
         <img
-          ata-aos="zoom-out"
           className="absolute bottom-5"
           src="https://i.ibb.co/ck943n2/b1.png"
           alt="b1"
           border="0"
         />
-        <h1
-          data-aos="flip-left"
-          className="text-[5rem] absolute top-2 text-orange-400 font-bold left-28"
-        >
+        <h1 className="text-[5rem] absolute top-2 text-orange-400 font-bold left-28">
           Hot Burger!
         </h1>
 

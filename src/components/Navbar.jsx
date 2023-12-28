@@ -22,10 +22,10 @@ const Navbar = () => {
         </Link>
       </ul>
       <Link
-        className= "text-2xl font-bold text-pink-700 flex items-center gap-x-2" 
+        className="text-2xl font-bold text-pink-700 flex items-center gap-x-2"
         href="/"
       >
-      Cart <BsBucket />
+        Cart <BsBucket /> <span>2</span>
       </Link>
     </div>
   );

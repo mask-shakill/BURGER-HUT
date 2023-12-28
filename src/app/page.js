@@ -4,9 +4,9 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
 import MainBanner from "@/components/Home/MainBanner";
-import PopularItems from "@/components/Home/PopularItems";
 import Discount from "@/components/Home/Discount";
 import DownloadApp from "@/components/Home/DownloadApp";
+import PopularMenuCard from "@/components/Home/PopularMenuCard";
 export default function Home() {
   useEffect(() => {
     AOS.init({
@@ -19,9 +19,9 @@ export default function Home() {
   return (
     <>
       <MainBanner />
-      <PopularItems />
-      <div className="flex mx-14 items-start justify-center">
-        <div className="w-1/2" data-aos="fade-up-right">
+      <PopularMenuCard />
+      <div className="flex mx-14 items-start justify-center mt-28">
+        <div className="w-1/2">
           <p className="text-4xl font-bold mt-10">
             Savory Stack Deluxe{" "}
             <span className="text-pink-500">
@@ -42,7 +42,7 @@ export default function Home() {
             <FaArrowRight />
           </button>
         </div>
-        <div data-aos="fade-left" className="w-1/2 pl-16 pb-4">
+        <div className="w-1/2 pl-16 pb-4">
           <img src="https://i.ibb.co/sJYv2cx/b2.png" alt="b2" border="0" />
         </div>
       </div>
